@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FastAPI Demo</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #3498db;
+    }
+    code {
+      background: #f1f1f1;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    .endpoint {
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #fff;
+      border-left: 4px solid #3498db;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FastAPI Demo Application</h1>
+    <p>This is a simple RESTful API built with FastAPI and deployed on Firebase.</p>
+    
+    <h2>API Endpoints</h2>
+    
+    <div class="endpoint">
+      <code>GET /</code>
+      <p>Returns a welcome message.</p>
+    </div>
+    
+    <div class="endpoint">
+      <code>GET /items</code>
+      <p>Returns all items in the database.</p>
+    </div>
+    
+    <div class="endpoint">
+      <code>GET /items/{item_id}</code>
+      <p>Returns a specific item by ID.</p>
+    </div>
+    
+    <div class="endpoint">
+      <code>POST /items</code>
+      <p>Creates a new item in the database.</p>
+    </div>
+    
+    <div class="endpoint">
+      <code>DELETE /items/{item_id}</code>
+      <p>Deletes an item from the database.</p>
+    </div>
+    
+    <h2>Documentation</h2>
+    <p>Full API documentation is available at <code>/docs</code> or <code>/redoc</code> endpoints.</p>
+  </div>
+</body>
+</html> 
